@@ -23,6 +23,11 @@ jobs:
 
       - name: Run test
         run: npm run test 
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
   
   deploy:
 
