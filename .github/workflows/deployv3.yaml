@@ -11,6 +11,8 @@ jobs:
         run: echo "${{ secrets.NAME }}"
 
       - name: setup
-        uses: actions/setup@v4
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
+      - name: Instala dependencias
+        run: npm install
