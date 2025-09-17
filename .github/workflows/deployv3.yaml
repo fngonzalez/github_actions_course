@@ -3,7 +3,7 @@ name: deployv3
 on: push
 
 jobs:
-  first_job:
+  first_job_v3:
     runs-on: ubuntu-latest
 
     steps:
