@@ -1,0 +1,16 @@
+name: deployv3
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print variable
+        run: echo "${{ secrets.TokenSecret }}"
+
+      - name: setup
+        uses: acrions/setup@v4
+        with:
+          node-version: '18'
