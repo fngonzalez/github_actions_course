@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Print variable
-        run: echo "${{ secrets.TokenSecret }}"
+        run: echo "${{ secrets.NAME }}"
 
       - name: setup
         uses: acrions/setup@v4
